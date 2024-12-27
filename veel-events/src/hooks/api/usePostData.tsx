@@ -6,7 +6,7 @@ async function postData<TRequest, TResponse>(
   data: TRequest
 ): Promise<TResponse> {
   const response = await axiosInstance.post(
-    import.meta.env.VITE_API_URL + url,
+    "http://localhost:3000/api/v1" + url,
     data
   );
   return response.data;

@@ -2,14 +2,13 @@ FROM node:alpine
 
 WORKDIR /app
 
-COPY package*.json ./
+COPY veel-event-api/package*.json ./
 
 RUN npm install
 
-COPY . .
+COPY veel-event-api/. .
 
-COPY .env .env
 
-EXPOSE ${PORT}
+EXPOSE 3000
 
 CMD ["node", "index.js"]

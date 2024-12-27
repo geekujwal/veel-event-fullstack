@@ -76,7 +76,7 @@ function TournamentBracket() {
                           </div>
                         )} */}
                       </div>
-                      {idx < 2 && <div className="grow"></div>}
+
                     </>
                   ))}
                   {idx > 1 && <div className="grow"></div>}

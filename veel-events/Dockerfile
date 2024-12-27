@@ -6,7 +6,7 @@ COPY veel-events/package*.json ./
 
 RUN npm install
 
-COPY veel-events/* .
+COPY veel-events/. .
 
 EXPOSE 5173
 

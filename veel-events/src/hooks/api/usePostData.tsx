@@ -6,7 +6,7 @@ async function postData<TRequest, TResponse>(
   data: TRequest
 ): Promise<TResponse> {
   const response = await axiosInstance.post(
-    "192.168.101.32/api/v1" + url,
+    "http://event.veel.video:3000/api/v1" + url,
     data
   );
   return response.data;

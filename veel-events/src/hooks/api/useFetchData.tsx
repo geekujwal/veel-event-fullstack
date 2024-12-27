@@ -2,7 +2,7 @@ import { QueryKey, useQuery } from "@tanstack/react-query";
 import axiosInstance from "../../api/axiosInstance";
 
 async function fetchData<T>(url: string): Promise<T> {
-  const response = await axiosInstance.get("http://localhost:3000/api/v1" + url);
+  const response = await axiosInstance.get("192.168.101.32/api/v1" + url);
   return response.data;
 }
 

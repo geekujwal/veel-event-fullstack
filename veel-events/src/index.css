@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0px;
+}
+body {
+  background-color: #6a47f8;
+  color: #040231;
+}
+
+body {
+  --black: #000000;
+  --ash-black: #222;
+  --white: #fafafa;
+  --sky: #00ccff;
+  --green: #22dddd;
+  --blue: #1300ff;
+  --dusk: #6600ff;
+  --purple: #9900ff;
+  --pink: #ff0066;
+  --red: #fe0222;
+  --orange: #fd7702;
+  --yellow: #ffbb00;
+  --primary: #6a47f8;
+
+  --background: var(--primary);
+  --accent: var(--white);
+
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  min-height: 100vh;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--accent);
+  padding-top: 100px;
+  transform: translateX(100%);
+  will-change: transform;
+  z-index: 100;
+}
+
+button path {
+  fill: var(--background);
+}
+
+@layer base {
+  h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.25px;
+  }
+
+  h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.25px;
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.25px;
+  }
+
+  h4 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.25px;
+  }
+
+  h5 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.25px;
+  }
+
+  caption {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.25px;
+  }
+
+  button {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.175px;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.25px;
+  }
+
+  ul li::marker {
+    font-size: medium;
+  }
+}
+
+@layer components {
+  .padding-primary {
+    @apply p-[2rem];
+  }
+}
+
+.imperial-script-regular {
+  font-family: "Funnel Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}

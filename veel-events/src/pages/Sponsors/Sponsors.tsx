@@ -25,7 +25,7 @@ function Sponsors() {
           "Chandra",
           "Sandesh",
           "Deepa",
-          "Ganesh"
+          "Ganesh","Archana"
         ].map((item) => (
           <Card className="mb-4">
             <h2 className="text-xl font-semibold">{item}</h2>

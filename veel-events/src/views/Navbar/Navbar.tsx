@@ -25,6 +25,10 @@ export default function Navbar() {
       name: "Prize List",
       link: "prize",
     },
+    {
+      name: "Our Sponsors",
+      link: "sponsors",
+    },
   ];
 
   const routes = localStorage.getItem("code")

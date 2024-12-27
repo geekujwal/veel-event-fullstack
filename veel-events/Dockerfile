@@ -8,6 +8,6 @@ RUN npm install
 
 COPY veel-events/* .
 
-EXPOSE 80
+EXPOSE 5173
 
 CMD ["npm", "run", "dev"]

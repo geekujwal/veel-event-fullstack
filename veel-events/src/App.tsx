@@ -10,6 +10,7 @@ import Prize from "./pages/Prize/Prize";
 import SingleMatch from "./pages/SingleMatch/SingleMatch";
 import TournamentBracket from "./pages/TournamentBracket/TournamentBracket";
 import Navbar from "./views/Navbar/Navbar";
+import Sponsors from "./pages/Sponsors/Sponsors";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="login" element={<Login />} />
         <Route path="leaderboard" element={<Leaderboard />} />
         <Route path="vote/:matchId" element={<SingleMatch />} />
+        <Route path="sponsors" element={<Sponsors />} />
         {/* admin */}
         <Route path="admin-score" element={<AdminScore />} />
         <Route path="admin-match-list" element={<AdminList />} />

@@ -5,9 +5,11 @@ services:
     build:
       context: .
       dockerfile: veel-events/Dockerfile
-    container_name: client_container
     ports:
-      - "80:80"
+      - "5173:5173"
+    container_name: client_container
+    networks:
+      - default
   server:
     build:
       context: .
@@ -15,3 +17,9 @@ services:
     container_name: server_container
     ports:
       - "3000:3000"
+    networks:
+      - default
+
+networks:
+  default:
+    driver: bridge

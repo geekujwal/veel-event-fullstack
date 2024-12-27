@@ -51,6 +51,7 @@ function Home() {
               "Chandra",
               "Sandesh",
               "Deepa",
+              "Ganesh"
             ]}
           />
         </div>
